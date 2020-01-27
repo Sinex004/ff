@@ -21,7 +21,7 @@
 .header a{
   text-decoration:none;
   margin-left: 3%;
-  font-size:0.9em;
+  font-size:0.9rem;
   color:#707070;
   font-weight:600;
   text-transform: uppercase;
@@ -585,7 +585,101 @@ button:focus{
     padding:2% 3%;
     border:1px solid black;
 }
+.dream-vacancy{
+    height:30vh;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/third.png');
+    background-size: cover;
+    background-position: bottom;
+    z-index: 100;
+    position: relative;
+}
+.dream-vacancy h2, .dream-vacancy h4{
+    z-index:200;
+    font-weight:800;
+}
+.dream-vacancy::before{
+    background-color: rgba(0,0,0,0.4) ;
+      position: absolute;
+      content: '';
+      width: 100%;
+      height:100%;
+}
+.edin{
+    height:100vh;
+}
+.edin h2{
+    margin-bottom:5%;
+}
+.vac-col{
+    display:flex;
+    margin-bottom:3%;
+}
+.vac{
+    border-radius:50px;
+    padding:2% 3%;
+    border:1px solid #9e9e9e;
+    padding-bottom:0;
+}
+.pni{
+    height:5px;
+    background-color:#a662ff;
 
+}
+.vac:not(first-child){
+    margin-left:5%;
+}
+
+@media screen and (max-width:800px) {
+    .header a{
+        font-size:0.4em;
+    }
+    .second-page-header h2{
+        font-size:0.7em;
+        white-space: pre-wrap;
+    }
+    .headings-box h1{
+        font-size:1.6em;
+    }
+    .headings-box h3{
+        font-size:1.3em;
+    }
+    .headings-box button{
+        font-size:1.1em;
+    }
+    .first-page-body{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        font-size:0.6em;
+    }
+    button{
+        font-size:0.8em!important;
+    }
+    .left-side{
+        padding-bottom:5%;
+    }
+    .card{
+        margin-bottom:5%;
+    }
+    .fiveSkills{
+        display:flex;
+        flex-direction: column;
+    }
+    .fifth-page{
+        height:100%!important;
+    }
+    .fifth-page-card{
+        margin:0!important;
+        margin-bottom:3%!important;
+    }
+}
 
 
 
