@@ -662,7 +662,7 @@ button:focus{
     button{
         font-size:0.8em!important;
     }
-    .left-side{
+    .left-side, .third-page{
         padding-bottom:5%;
     }
     .card{
@@ -672,12 +672,59 @@ button:focus{
         display:flex;
         flex-direction: column;
     }
-    .fifth-page{
+    .fifth-page, .first-page, .second-page, .third-page, .fourth-page, .sixth-page{
         height:100%!important;
     }
     .fifth-page-card{
         margin:0!important;
         margin-bottom:3%!important;
+    }
+    .sixth-page{
+        padding-bottom:5%;
+        height:100%;
+    }
+    .second-first-page h1{
+        font-size:2em;
+    }
+    .second-first-page h5{
+        font-size:1em;
+    }
+    .second-first-page, .second-second-page, .second-fourth-page, .second-fifth-page, .second-sixth-page, .second-seventh-page, .second-eighth-page, .second-nineth{
+        height:100%;
+    }
+    .second-second-page h3{
+        font-size:1.2em;
+    }
+    .s-f-p-b h2, .second-fifth-page h2{
+        font-size:1em;
+    }
+    .client-photo{
+        width:100px;
+        height:100px;
+    }
+    .second-fifth-page{
+        padding:2% 5%;
+    }
+    .second-seventh-page h3{
+        font-size:0.45em;
+    }
+    .eight-main-left h4{
+        font-size:0.5em;
+    }
+    .pressF{
+        font-size:0.6em;
+    }
+    .dream-vacancy h2{
+        font-size:0.8em;
+    }
+    .edin{
+        height:70vh;
+    }
+    .header a{
+        font-size:0.3em;
+    }
+    .header img{
+        width:30%;
     }
 }
 
