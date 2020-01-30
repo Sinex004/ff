@@ -14,9 +14,13 @@
   display:flex;
   flex-direction: row;
   align-items: center;
-  height:5vh;
+  height:13vh;
   text-align:center;
   overflow: hidden;
+}
+.header .as{
+  display:space-between;
+  width:100%;
 }
 .header a{
   text-decoration:none;
@@ -126,28 +130,27 @@ padding-top:10%;
   font-weight: 600;
 }
 .fourth-page{
-  height:100vh;
   background-image: url('./images/fourths-back.jpg');
   background-size:cover;
 }
 .fourth-right{
-  height:100vh;
+  height:100%!important;
   background: linear-gradient(to right,#a662ff, #ceadfa)!important;
   text-align:center;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding:5%!important;
 }
 .fourth-page h2{
     font-size:2rem;
 }
 .fourth-page-content{
-  width:80%;
   margin:auto;
   color:white;
-  font-weight:600;
+  /* font-weight:600; */
   border:3px solid white;
-  padding:5% 5%
+  padding:5% 10%
 }
 .fourth-right p{
   text-align:left;
@@ -156,8 +159,13 @@ padding-top:10%;
 .fourth-page-content button{
   border-radius:20px;
 }
+.clients{
+  display:space-between;
+}
+.client{
+  width:25vw;
+}
 .fifth-page{
-  height:100vh;
 }
 .fifth-page h4{
   padding:2% 4%;
@@ -167,11 +175,30 @@ padding-top:10%;
   justify-content: center;
   align-items: center;
   margin-bottom:3%;
+  height:100%
+}
+.vac-desc{
+  width:70%;
+  margin:auto;
+  font-weight:600;
+  font-size:1.2em;
+  padding-bottom:5%;
+}
+.vac{
+  width:33%;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+.edin{
+  height:100%!important;
 }
 .fifth-page-card{
-  padding:2% 5%;
+  padding:1.5rem;
   border:1px solid black;
   border-radius:35px;
+  width:20%;
+  height:100%;
 }
 .fifth-page-card:not(:last-child){
   margin-right:5%;
@@ -249,11 +276,11 @@ footer h6{
   margin-left:auto;
 }
 .second-second-page{
-  height:100vh;
+  height:100%;
   padding:2% 4%;
 }
 .second-second-page-up{
-  height:50vh;
+  height:100%;
 }
 .second-second-page-up .steps{
   font-size:0.8em;
@@ -634,9 +661,14 @@ button:focus{
     margin-left:5%;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1000px) {
+    .header{
+      height:10vh;
+      flex-direction: column;
+      padding:2% 2%;
+    }
     .header a{
-        font-size:0.4em;
+        font-size:0.5em!important;
     }
     .second-page-header h2{
         font-size:0.7em;
@@ -676,6 +708,8 @@ button:focus{
         height:100%!important;
     }
     .fifth-page-card{
+      width:80%;
+      padding: 1% 3%;
         margin:0!important;
         margin-bottom:3%!important;
     }
