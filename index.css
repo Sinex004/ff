@@ -3,9 +3,15 @@
   font-family: 'Montserrat', sans-serif;
   overflow-x:hidden;
   margin:0;
+  scroll-behavior: smooth;
 }
+.fifth-page-card:hover{
+      color:white;
+      background-color: #a662ff;
+      border:none;
+    }
 .first-page{
-  height:100vh;
+  height:100%;
 }
 .header{
   padding:2% 8%;
@@ -32,7 +38,7 @@
   white-space: nowrap;
 }
 .logo{
-  width:16%;
+  width:15%;
 }
 .first-page-body{
   height:90vh;
@@ -167,6 +173,7 @@ padding-top:10%;
   width:25vw;
 }
 .fifth-page{
+  width:100%;
 }
 .fifth-page h4{
   padding:2% 4%;
@@ -206,8 +213,8 @@ padding-top:10%;
 }
 .sixth-page{
   background: linear-gradient(to right,#c077dc,#7d7aae,#aa44d7);
-  height:135vh;
-  padding:0% 5%;
+  height:100%;
+  padding:3% 5%;
 }
 .sixth-page .second-page-header h2{
   color:white;
@@ -332,7 +339,7 @@ footer h6{
   font-weight:600;
 }
 .second-third-page{
-  height:100vh;
+  height:100%;
   padding:2% 5%;
   color:#707070;
 background-color: white;}
@@ -714,6 +721,7 @@ button:focus{
         margin:0!important;
         margin-bottom:3%!important;
     }
+    
     .sixth-page{
         padding-bottom:5%;
         height:100%;
