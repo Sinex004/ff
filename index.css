@@ -287,6 +287,9 @@ footer h6{
   height:100%;
   padding:2% 4%;
 }
+.firstButtons{
+  background-color: #fff;
+}
 .second-second-page-up{
   height:100%;
 }
@@ -670,6 +673,10 @@ button:focus{
 }
 
 @media screen and (max-width:1000px) {
+    .firstButtons{
+      border-radius:0px!important;
+      width:100%;
+    }
     .header{
       height:10vh;
       flex-direction: column;
@@ -741,6 +748,9 @@ button:focus{
     .s-f-p-b h2, .second-fifth-page h2{
         font-size:1em;
     }
+    .client h5{
+      font-size:0.6em;
+    }
     .client-photo{
         width:100px;
         height:100px;
@@ -760,6 +770,10 @@ button:focus{
     .dream-vacancy h2{
         font-size:0.8em;
     }
+    .dream-vacancy h4{
+        font-size:0.7em!important;
+        padding:0 3%;
+    }
     .edin{
         height:70vh;
     }
@@ -768,6 +782,15 @@ button:focus{
     }
     .header img{
         width:30%;
+    }
+    footer img{
+      width:30%;
+    }
+    .vac{
+      border-radius: 10px;  
+    }
+    .vac-col{
+      margin-right:2%;
     }
 }
 
