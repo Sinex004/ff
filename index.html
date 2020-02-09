@@ -147,16 +147,16 @@
           <h2>НАШИ УСЛУГИ</h2>
           <h4>4 КЛЮЧЕВЫХ НАПРАВЛЕНИЯ РАБОТЫ FINPARK:</h4>
           <div class="fiveSkills">
-            <div class="fifth-page-card">
+            <div onclick="slowScroll('#case',0)" class="fifth-page-card">
               <p>Составление финансовой модели</p>
             </div>
-            <div class="fifth-page-card">
+            <div onclick="slowScroll('#case',1)" class="fifth-page-card">
               <p>Внедрение управленческой отчетности</p>
             </div>
-            <div class="fifth-page-card">
+            <div onclick="slowScroll('#case',2)" class="fifth-page-card">
               <p>Аутсорсинг финансового директора</p>
             </div>
-            <div class="fifth-page-card">
+            <div onclick="slowScroll('#case',3)" class="fifth-page-card">
               <p>Экспресс-ревизор</p>
             </div>
             <!-- <div class="fifth-page-card">
@@ -245,7 +245,7 @@
           <p><i>Описанные выше процессы – только пример того, на что способны специалисты FINPARK.<br>
              Для получения более детальной информации напишите нам и получите индивидуальную консультацию по интересующим вас запросам.</i>
           </p>
-          <div id="divtoshow" style="position: fixed;display:none;background-color: white;padding: 1%;border-radius: 10px;border: 2px solid black;background-color: white;"><a style="color: black;" href="tel:(87088302639)">+77088302639</a><br><a style="color: black;" href="mailto:example@gmail.com">example@gmail.com</a></div>
+          <div id="divtoshow" style="position: fixed;display:none;background-color: white;padding: 1%;border-radius: 10px;border: 2px solid black;background-color: white;"><a style="color: black;" href="tel:(87088302639)">+77088302639</a><br><a style="color: black;" href="mailto:first.star.kz@gmail.com">first.star.kz@gmail.com</a></div>
           <button onclick="hoverdiv(event,'divtoshow')">Обсудить</button> 
         </div>
       </div>
@@ -255,18 +255,18 @@
             <img src="images/lllogo.png"/>
           </div>
           <div class="col-xl-3">
-            <h5>Курс «Финансовая карьера в Международной компании»</h5>
+            <h5><a href="http://www.finpark.kz/">Курс «Финансовая карьера в Международной компании»</a></h5>
             <p>Курс позволяет подготовиться к поступлению в международные компании по авторской методике Жулдыз Алибековой. В процессе обучения вы ознакомитесь с личным практическим опытом главы компании FINPARK и получите ее персональные наработки.
             </p>
           </div>
           <div class="col-xl-3">
-            <h5>Курс «Финансовая грамотность»</h5>
+            <h5><a href="http://www.fin-gram.kz/">Курс «Финансовая грамотность»</a></h5>
             <p>Говорим о финансах простым и понятным языком. Вы узнаете о финансах все – от азов до инвестирования и получите практические навыки для принятия финансовых решений в бизнесе и в личных финансах.
             </p>
           </div>
           <div class="col-xl-3">
-            <a href="tel:(87088302639)">+77088302639</a>
-            <a href="mailto:example@gmail.com">example@gmail.com</a>
+            <a href="tel:(87088302639)">+77088302639</a><br>
+            <a href="mailto:first.star.kz@gmail.com">first.star.kz@gmail.com</a>
             <p>Казахстан, г.Нур-Султан, ул.Шокан Уалиханов, дом 13</p>
           </div>
         </div>
@@ -421,11 +421,11 @@ var x = document.getElementsByClassName("firstButtons");
 •	Сопровождение всех сделок, консультация каждого контракта по вопросам финансовых рисков<br>\
 •	Выстраивание бизнес-процессов в работе финансовой службы на основе аналитики<br>\
 •	Перевод цифровых показателей бизнеса на понятный заказчику язык <br>\
-•	Предоставление ряда рекомендаций для руководителя по повышению доходности бизнеса", "• Проверка контролей и бизнес-процессов в финансовой службе бизнеса\
-• проверка работы бухгалтерии, финансового контроллинга и налогового департамента\
-• разработка программы действий для улучшения финансовой службы\
-• проверка организационной структуры для эффективной работы между департаментами\
-• оптимизация и внедрение новых технологий работы для эффективного решения задач в департаментах\
+•	Предоставление ряда рекомендаций для руководителя по повышению доходности бизнеса", "• Проверка контролей и бизнес-процессов в финансовой службе бизнеса<br>\
+• проверка работы бухгалтерии, финансового контроллинга и налогового департамента<br>\
+• разработка программы действий для улучшения финансовой службы<br>\
+• проверка организационной структуры для эффективной работы между департаментами<br>\
+• оптимизация и внедрение новых технологий работы для эффективного решения задач в департаментах<br>\
 • проверка документов и счет-фактур для избежания штрафов со стороны государства."];
       var x = document.getElementById("tab2-text");
       x.innerHTML = texts[i];
@@ -458,6 +458,12 @@ var x = document.getElementsByClassName("firstButtons");
       $("#"+divid).toggle();
       return false;
       }
+    function slowScroll(id,i){
+      $('html, body').animate({
+          scrollTop: $(id).offset().top
+      }, 100);
+      tab2ChangeText(i);
+    };
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 

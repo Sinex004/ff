@@ -168,7 +168,15 @@ padding-top:10%;
 }
 .fourth-page-content button{
   border-radius:20px;
+  background-color: rgb(227, 155, 241);
+  transition-duration: 0.4s;
+  border: 2px solid rgb(167, 79, 194);
 }
+.fourth-page-content button:hover{
+  background-color: rgb(229, 23, 248);
+  border: 2px solid rgb(229, 23, 248);
+}
+
 .clients{
   display:space-between;
 }
@@ -200,6 +208,8 @@ padding-top:10%;
   display:flex;
   justify-content: center;
   align-items:center;
+  transition-duration: 0.4s;
+
 }
 .vac:hover{
   color:white;
@@ -213,6 +223,8 @@ padding-top:10%;
 }
 .fifth-page-card{
   padding:1.5rem;
+  transition-duration: 0.4s;
+
   border:1px solid black;
   border-radius:35px;
   width:20%;
@@ -443,17 +455,18 @@ background-color: white;}
   display:flex;
   color:white;
   z-index:100;
-  padding-bottom:2%;
+  padding-bottom:5%;
 }
 .client-photo{
   border-radius:50%;
-  height:100px;
-  width:100px;
-  background-color: #fff;
+  /* height:70px; */
+  /* width:70px; */
+  /* background-color: #fff; */
   padding:2%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  
 }
 .second-fifth-page button{
   padding:1% 3%;
@@ -465,6 +478,7 @@ background-color: white;}
 }
 .client{
   text-align:center;
+  /* align-items: center; */
   
 }
 
@@ -767,8 +781,8 @@ button:focus{
       font-size:0.6em;
     }
     .client-photo{
-        width:100px;
-        height:100px;
+        width:70px;
+        height:70px;
     }
     .second-fifth-page{
         padding:2% 5%;
