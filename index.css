@@ -7,8 +7,11 @@
 }
 .fifth-page-card:hover{
       color:white;
-      background-color: #a662ff;
-      border:none;
+      background-color: #a065ec;
+      /* background-color: #ddc5fd; */
+      /* border:none; */
+      border:1px solid rgb(66, 3, 102);
+
     }
 .first-page{
   height:100%;
@@ -198,6 +201,13 @@ padding-top:10%;
   justify-content: center;
   align-items:center;
 }
+.vac:hover{
+  color:white;
+  background-color: #a065ec;
+  /* background-color: #ddc5fd; */
+  /* border:none; */
+  border:1px solid rgb(66, 3, 102);
+}
 .edin{
   height:100%!important;
 }
@@ -237,6 +247,8 @@ padding-top:10%;
 }
 .questions h3{
   padding:2% 4%;
+  border-bottom: 1px dashed white;
+
 }
 .questions button{
   padding:2% 7%;
@@ -406,7 +418,7 @@ background-color: white;}
   align-items: center;
 }
 .second-fifth-page{
-  height:100vh;
+  height:100%;
   background-image:url('./images/cover.jpg');
   background-size: cover;
   position: relative;
@@ -435,10 +447,13 @@ background-color: white;}
 }
 .client-photo{
   border-radius:50%;
-  height:150px;
-  width:150px;
+  height:100px;
+  width:100px;
   background-color: #fff;
   padding:2%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .second-fifth-page button{
   padding:1% 3%;

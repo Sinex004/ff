@@ -10,6 +10,23 @@
 </head>
 <body>
 	<div class="second-web-page">
+    <div class="header">
+      <img src="images/lllogo.png" class="logo"/>
+      <div class="as">
+        <a href="index.html#about-us">
+          О компании
+        </a>
+        <a id="cc" onClick="navbuttons()" href="#clientss">
+          Клиенты
+        </a>
+        <a href="index.html#case">
+          Кейсы
+        </a>
+        <a href="third.html">
+          Вакансии
+        </a>
+      </div>
+    </div>
                 <div class="second-first-page row">
                     <div class="second-first-page-left col-xl">
                         <h1>ЧТО ВХОДИТ В УСЛУГИ<br/> СПЕЦИАЛИСТА FINPARK:</h1>
@@ -116,81 +133,85 @@
                         <!-- <button>ПОДРОБНЕЕ</button> -->
                     </div>
                 </div>
-                <div class="second-fifth-page">
+                <div class="second-fifth-page" id="clientss">
                     <h2>НАШИ КЛИЕНТЫ</h2>
                     <div class="clients">
                         <div class="client">
-                          <!-- <div class="client-photo"></div> -->
+                          <div class="client-photo"><img src="images/icons/1.png"/></div>
                           <h5>Юридическая компания</h5>
                         </div>
                         <div class="client">
-                          <!-- <div class="client-photo"></div> -->
+                          <div class="client-photo"><img src="images/icons/2.png"/></div>
                           <h5>Отельный бизнес</h5>
                         </div>
                         <div class="client">
-                          <!-- <div class="client-photo"></div> -->
+                          <div class="client-photo"><img src="images/icons/3.png"/></div>
                           <h5>Детский центр</h5>
                         </div>
                         <div class="client">
-                          <!-- <div class="client-photo"></div> -->
+                          <div class="client-photo"><img src="images/icons/4.png"/></div>
                           <h5>Медицинский центр</h5>
                         </div>
-                        
-                        
+
+
                     </div>
                     <div class="clients">
                       <div class="client">
-                        <!-- <div class="client-photo"></div> -->
+                        <div class="client-photo"><img src="images/icons/5.png"/></div>
                         <h5>Компания по маркетинговым исследованиям</h5>
                     </div>
                     <div class="client">
-                        <!-- <div class="client-photo"></div> -->
+                        <div class="client-photo"><img src="images/icons/6.png"/></div>
                         <h5>Торговая оффлайн-компания</h5>
                     </div>
                     <div class="client">
-                        <!-- <div class="client-photo"></div> -->
+                        <div class="client-photo"><img src="images/icons/7.png"/></div>
                         <h5>Онлайн-сервисы</h5>
                     </div>
                     <div class="client">
-                      <!-- <div class="client-photo"></div> -->
+                      <div class="client-photo"><img src="images/icons/8.png"/></div>
                       <h5>Образовательная онлайн-школа</h5>
                     </div>
-                    
+
                     </div>
                     <div class="clients">
                       <div class="client">
-                          <!-- <div class="client-photo"></div> -->
+                          <div class="client-photo"><img src="images/icons/9.png"/></div>
                           <h5>Ателье штор</h5>
                         </div>
                         <div class="client">
-                          <!-- <div class="client-photo"></div> -->
+                          <div class="client-photo"><img src="images/icons/10.png"/></div>
                           <h5>Дизайнерский центр</h5>
                         </div>
                         <div class="client">
-                          <!-- <div class="client-photo"></div> -->
+                          <div class="client-photo"><img src="images/icons/11.png"/></div>
                           <h5>Косметологический кабинет</h5>
                         </div>
                         <div class="client">
-                          <!-- <div class="client-photo"></div> -->
+                          <div class="client-photo"><img src="images/icons/12.png"/></div>
                           <h5>Медицинский центр аппаратной косметологии</h5>
                         </div>
                     </div>
                     <div class="clients">
                       <div class="client">
-                        <!-- <div class="client-photo"></div> -->
+                        <div class="client-photo"><img src="images/icons/13.png"/></div>
                         <h5>Центр красоты и здоровья</h5>
                       </div>
                       <div class="client">
-                        <!-- <div class="client-photo"></div> -->
+                        <div class="client-photo"><img src="images/icons/14.png"/></div>
                         <h5>Цех по производству изделий</h5>
                       </div>
                       <div class="client">
-                        <!-- <div class="client-photo"></div> -->
+                        <div class="client-photo"><img src="images/icons/15.png"/></div>
                         <h5>Строительная компания</h5>
                       </div>
                     </div>
-
-                    <button>Стать клиентом!</button>
+                    <div id="divtoshow" style="position: fixed;display:none;background-color: white;padding: 1%;border-radius: 10px;border: 2px solid black;background-color: white;z-index: 100000;">
+                      <a style="color: black;" href="tel:(87088302639)">+77088302639</a>
+                      <br>
+                      <a style="color: black;" href="mailto:example@gmail.com">example@gmail.com</a>
+                    </div>
+                    <button onclick="hoverdiv(event,'divtoshow')" >Стать клиентом!</button>
                 </div>
                 <!-- <div class="second-sixth-page">
                   <div class="second-page-header">
@@ -233,7 +254,7 @@
                       </h4>
                     </div>
                     <div class="eight-main-right">
-                      
+
                     </div>
                   </div>
                   </div> -->
@@ -286,6 +307,7 @@
                     </div>
                     <div class="col-xl-3">
                       <a href="tel:(87088302639)">+77088302639</a>
+                      <a href="mailto:example@gmail.com">example@gmail.com</a>
                       <p>Казахстан, г.Нур-Султан, ул.Шокан Уалиханов, дом 13</p>
                     </div>
                   </div>
@@ -293,4 +315,25 @@
                   <h6>2019 cprt</h6> -->
                 </footer>
 </body>
+<script>
+  function navbuttons(j){
+      var y = document.getElementById("cc");
+      y.style.color = "#a662ff";
+  }
+  function hoverdiv(e,divid){
+
+    var left  = e.clientX  + "px";
+    var top  = e.clientY  + "px";
+
+    var div = document.getElementById(divid);
+
+    div.style.left = left;
+    div.style.top = top;
+
+    $("#"+divid).toggle();
+    return false;
+  }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
 </html>
