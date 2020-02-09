@@ -87,7 +87,7 @@
   color:#707070;
   font-weight: 800;
 }
-.second-page-header h2{
+.second-page-header h1{
   border-bottom:1px solid #b74394;
   padding:2% 3%;
   margin:auto;
@@ -718,8 +718,8 @@ button:focus{
     .header a{
         font-size:0.5em!important;
     }
-    .second-page-header h2{
-        font-size:0.7em;
+    .second-page-header h1{
+        font-size:1em;
         white-space: pre-wrap;
     }
     .headings-box h1{
@@ -761,7 +761,7 @@ button:focus{
     }
     .fourth-page-content{
       padding: 0;
-      color: black;
+      /* color: black; */
       border: none;
 
     }
