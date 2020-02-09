@@ -12,18 +12,21 @@
   <body>
       <div class="first-page">
         <div class="header">
-          <a href="index.html" style="margin-right:40%">
+          <!-- <a href="index.html" style="margin-right:40%"> -->
             <img src="images/lllogo.png"  class="logo"/>
-            </a>
+            <!-- </a> -->
           <div class="as">
            
             <a class="navvv" onClick="navbuttons(0)" href="#about-us">
               О компании
             </a>
-            <a class="navvv" onClick="navbuttons(1)" href="second.html#clientss">
+            <a class="navvv" onClick="navbuttons(1)" href="#clientss">
               Клиенты
             </a>
-            <a class="navvv" onClick="navbuttons(2)" href="#case">
+            <a href="second.html">
+              Услуги
+            </a>
+            <a class="navvv" onClick="navbuttons(2)" href="#caseses">
               Кейсы
             </a>
             <a href="third.html">
@@ -43,7 +46,7 @@
             <!-- <button class="consult">ПРОКОНСУЛЬТИРОВАТЬСЯ</button> -->
           </div>
         </div>
-        <div class="second-page">
+        <div class="second-page" id="caseses">
           <div class="second-page-header">
             <h1>ЗАЧЕМ НУЖЕН ФИНАНСОВЫЙ УЧЕТ?</h1>
           </div>
@@ -255,18 +258,94 @@
           <button onclick="hoverdiv(event,'divtoshow')">Обсудить</button> 
         </div>
       </div>
+      <div class="second-fifth-page" id="clientss">
+        <h2 style="padding-top: 2%;">НАШИ КЛИЕНТЫ</h2>
+        <div class="clients">
+            <div class="client">
+              <div class="client-photo"><img src="images/icons/1.png"/></div>
+              <h5>Юридическая компания</h5>
+            </div>
+            <div class="client">
+              <div class="client-photo"><img src="images/icons/2.png"/></div>
+              <h5>Отельный бизнес</h5>
+            </div>
+            <div class="client">
+              <div class="client-photo"><img src="images/icons/3.png"/></div>
+              <h5>Детский центр</h5>
+            </div>
+            <div class="client">
+              <div class="client-photo"><img src="images/icons/4.png"/></div>
+              <h5>Медицинский центр</h5>
+            </div>
+
+
+        </div>
+        <div class="clients">
+          <div class="client">
+            <div class="client-photo"><img src="images/icons/5.png"/></div>
+            <h5>Компания по маркетинговым исследованиям</h5>
+        </div>
+        <div class="client">
+          <div class="client-photo"><img src="images/icons/7.png"/></div>
+          <h5>Онлайн-сервисы</h5>
+      </div>
+        <div class="client">
+          <div class="client-photo"><img src="images/icons/12.png"/></div>
+          <h5>Медицинский центр аппаратной косметологии</h5>
+        </div>
+        </div>
+        <div class="clients">
+          <div class="client">
+              <div class="client-photo"><img src="images/icons/9.png"/></div>
+              <h5>Ателье штор</h5>
+            </div>
+            <div class="client">
+              <div class="client-photo"><img src="images/icons/10.png"/></div>
+              <h5>Дизайнерский центр</h5>
+            </div>
+            <div class="client">
+              <div class="client-photo"><img src="images/icons/11.png"/></div>
+              <h5>Косметологический кабинет</h5>
+            </div>
+            <div class="client">
+              <div class="client-photo"><img src="images/icons/6.png"/></div>
+              <h5>Торговая оффлайн-компания</h5>
+          </div>
+        </div>
+        <div class="clients">
+          <div class="client">
+            <div class="client-photo"><img src="images/icons/13.png"/></div>
+            <h5 style="align-items: center; align-content: center;">Центр красоты и здоровья</h5>
+          </div>
+          <div class="client">
+            <div class="client-photo"><img src="images/icons/14.png"/></div>
+            <h5>Цех по производству изделий</h5>
+          </div>
+          <div class="client">
+            <div class="client-photo"><img src="images/icons/15.png"/></div>
+            <h5>Строительная компания</h5>
+          </div>
+          
+        </div>
+        <div id="divtoshow" style="position: fixed;display:none;background-color: white;padding: 1%;border-radius: 10px;border: 2px solid black;background-color: white;z-index: 100000;">
+          <a style="color: black;" href="tel:(87088302639)">+77088302639</a>
+          <br>
+          <a style="color: black;" href="mailto:first.star.kz@gmail.com">first.star.kz@gmail.com</a>
+        </div>
+        <button style="margin-bottom: 3%;" onclick="hoverdiv(event,'divtoshow')" >Стать клиентом!</button>
+    </div>
       <footer>
         <div class="row">
           <div class="col-xl-3">
             <img src="images/lllogo.png"/>
           </div>
           <div class="col-xl-3">
-            <h5><a href="http://www.finpark.kz/">Курс «Финансовая карьера в Международной компании»</a></h5>
+            <h5><a style="text-decoration: underline;" href="http://www.finpark.kz/">Курс «Финансовая карьера в Международной компании»</a></h5>
             <p>Курс позволяет подготовиться к поступлению в международные компании по авторской методике Жулдыз Алибековой. В процессе обучения вы ознакомитесь с личным практическим опытом главы компании FINPARK и получите ее персональные наработки.
             </p>
           </div>
           <div class="col-xl-3">
-            <h5><a href="http://www.fin-gram.kz/">Курс «Финансовая грамотность»</a></h5>
+            <h5 ><a style="text-decoration: underline;" href="http://www.fin-gram.kz/">Курс «Финансовая грамотность»</a></h5>
             <p>Говорим о финансах простым и понятным языком. Вы узнаете о финансах все – от азов до инвестирования и получите практические навыки для принятия финансовых решений в бизнесе и в личных финансах.
             </p>
           </div>
